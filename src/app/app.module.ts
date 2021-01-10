@@ -12,9 +12,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TodoDetailModule } from './components/todo-detail/todo-detail.module';
+import { TodoListModule } from './components/todo-list/todo-list.module';
+import { TodoModule } from './components/todo/todo.module';
 
 @NgModule({
-  declarations: [AppComponent, TodoListComponent, TodoComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,8 +27,9 @@ import { TodoDetailModule } from './components/todo-detail/todo-detail.module';
     FormsModule,
     HttpClientModule,
     TodoDetailModule,
+    TodoListModule,
+    TodoModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
