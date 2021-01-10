@@ -1,5 +1,7 @@
 <mat-list>
-  <mat-list-item> Todo ID: {{ todo.id }} </mat-list-item>
+  <mat-list-item routerLink="/todo/{{ todo.id }}">
+    Todo ID: {{ todo.id }}
+  </mat-list-item>
   <mat-list-item> User ID: {{ todo.userId }} </mat-list-item>
   <mat-list-item> Title: {{ todo.title }} </mat-list-item>
   <mat-list-item> Title: {{ todo.title }} </mat-list-item>

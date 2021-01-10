@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TodoDetailModule } from './components/todo-detail/todo-detail.module';
 
 @NgModule({
   declarations: [AppComponent, TodoListComponent, TodoComponent],
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     FormsModule,
     HttpClientModule,
+    TodoDetailModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

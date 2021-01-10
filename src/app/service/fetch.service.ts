@@ -11,6 +11,8 @@ export class FetchService {
   constructor(private http: HttpClient) {}
 
   getTodos() {
-    return this.http.get<Todo[]>(`https://jsonplaceholder.typicode.com/todos`);
+    return this.http.get<Todo[]>(
+      `https://jsonplaceholder.typicode.com/todos?_page=1`
+    );
   }
 }
