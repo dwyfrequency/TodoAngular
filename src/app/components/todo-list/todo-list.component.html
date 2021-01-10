@@ -1,0 +1,4 @@
+<p>todo-list works!</p>
+<mat-card *ngFor="let todo of todos">
+  <app-todo [todo]="todo" (completeTodoEvent)="removeTodo($event)"></app-todo>
+</mat-card>
