@@ -15,4 +15,10 @@ export class FetchService {
       `https://jsonplaceholder.typicode.com/todos?_page=1`
     );
   }
+
+  getTodo(id: number) {
+    return this.http.get<Todo>(
+      `https://jsonplaceholder.typicode.com/todos/${id}`
+    );
+  }
 }
